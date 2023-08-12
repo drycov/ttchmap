@@ -1,0 +1,32 @@
+script(type='text/javascript' src='/static/js/jquery.min.js')
+script(type='text/javascript' src='/static/js/jquery-ui.min.js')
+script(type='text/javascript' src='/static/fontawesome/js/all.min.js')
+script(type='text/javascript' src='/static/overlayscrollbars/browser/overlayscrollbars.browser.es6.min.js')
+
+script(type='text/javascript' src='/static/bootstrap/js/bootstrap.min.js')
+script(type='text/javascript' src='/static/adminlte/js/adminlte.min.js')
+script(type='text/javascript' src='static/apexcharts/apexcharts.min.js')
+script(type='text/javascript' src='/static/jsvectormap/js/jsvectormap.min.js')
+script.
+    const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
+    const Default = {
+        scrollbarTheme: "os-theme-light",
+        scrollbarAutoHide: "leave",
+        scrollbarClickScroll: true,
+    };
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+        if (
+            sidebarWrapper &&
+            typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== "undefined"
+        ) {
+            OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+                scrollbars: {
+                    theme: Default.scrollbarTheme,
+                    autoHide: Default.scrollbarAutoHide,
+                    clickScroll: Default.scrollbarClickScroll,
+                },
+            });
+        }
+    });

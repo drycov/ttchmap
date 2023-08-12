@@ -1,0 +1,114 @@
+aside.app-sidebar.bg-body-secondary.shadow(data-bs-theme="light")
+    // begin::Sidebar Brand
+    .sidebar-brand
+        // begin::Brand Link
+        a.brand-link(href="./index.html")
+            // begin::Brand Image
+            img.brand-image.opacity-75.shadow(src="https://option-rating.com/wp-content/uploads/2019/03/AO-Transtelecom.png" alt="AdminLTE Logo")
+            // end::Brand Image
+            // begin::Brand Text
+            //- span.brand-text.fw-light AdminLTE 4
+            // end::Brand Text
+            // end::Brand Link
+            // end::Sidebar Brand
+
+            // begin::Sidebar Wrapper
+    .sidebar-wrapper
+        nav.mt-2
+            // begin::Sidebar Menu
+            ul.nav.sidebar-menu.flex-column(data-lte-toggle="treeview" role="menu" data-accordion="false")
+                // Dashboard
+                li.nav-item.menu-open
+                    a.nav-link.active(href="#")
+                        i.nav-icon.bi.bi-speedometer
+                        p
+                            | Dashboard
+                            i.nav-arrow.bi.bi-chevron-right
+                    ul.nav.nav-treeview
+                        li.nav-item
+                            a.nav-link.active(href="./index.html")
+                                i.nav-icon.bi.bi-circle
+                                p Dashboard v1
+
+                // Widgets
+                li.nav-item
+                    a.nav-link(href="#")
+                        i.nav-icon.bi.bi-box-seam-fill
+                        p
+                            | Widgets
+                            i.nav-arrow.bi.bi-chevron-right
+                    ul.nav.nav-treeview
+                        li.nav-item
+                            a.nav-link(href="./widgets/small-box.html")
+                                i.nav-icon.bi.bi-circle
+                                p Small Box
+
+                // Layout Options
+                li.nav-item
+                    a.nav-link(href="#")
+                        i.nav-icon.bi.bi-clipboard-fill
+                        p
+                            | Layout Options
+                            span.nav-badge.badge.text-bg-secondary.me-3 6
+                            i.nav-arrow.bi.bi-chevron-right
+                    ul.nav.nav-treeview
+                        li.nav-item
+                            a.nav-link(href="./layout/unfixed-sidebar.html")
+                                i.nav-icon.bi.bi-circle
+                                p Default Sidebar
+
+
+                // UI Elements
+                li.nav-item
+                    a.nav-link(href="#")
+                        i.nav-icon.bi.bi-tree-fill
+                        p
+                            | UI Elements
+                            i.nav-arrow.bi.bi-chevron-right
+                    ul.nav.nav-treeview
+                        li.nav-item
+                            a.nav-link(href="./UI/timeline.html")
+                                i.nav-icon.bi.bi-circle
+                                p Timeline
+
+                // Forms
+                li.nav-item
+                    a.nav-link(href="#")
+                        i.nav-icon.bi.bi-pencil-square
+                        p
+                            | Forms
+                            i.nav-arrow.bi.bi-chevron-right
+                    ul.nav.nav-treeview
+                        li.nav-item
+                            a.nav-link(href="./forms/general.html")
+                                i.nav-icon.bi.bi-circle
+                                p General Elements
+
+                // Tables
+                li.nav-item
+                    a.nav-link(href="#")
+                        i.nav-icon.bi.bi-table
+                        p
+                            | Tables
+                            i.nav-arrow.bi.bi-chevron-right
+                    ul.nav.nav-treeview
+                        li.nav-item
+                            a.nav-link(href="./tables/simple.html")
+                                i.nav-icon.bi.bi-circle
+                                p Simple Tables
+                // LABELS
+                li.nav-header LABELS
+                li.nav-item
+                    a.nav-link(href="#")
+                        i.nav-icon.bi.bi-circle.text-danger
+                        p.text Important
+                li.nav-item
+                    a.nav-link(href="#")
+                        i.nav-icon.bi.bi-circle.text-warning
+                        p Warning
+                li.nav-item
+                    a.nav-link(href="#")
+                        i.nav-icon.bi.bi-circle.text-info
+                        p Informational
+            // end::Sidebar Menu
+            // end::Sidebar Wrapper

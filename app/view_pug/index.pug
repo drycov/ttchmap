@@ -1,0 +1,25 @@
+extends ./layout/base 
+block content
+    body.layout-fixed.sidebar-expand-lg.sidebar-mini.sidebar-collapse.bg-body-tertiary
+        .app-wrapper
+            include ./layout/navigation.pug
+            include ./layout/sidebar.pug
+            block main
+                main.app-main
+                    // begin::App Content Header
+                    .app-content-header
+                        // begin::Container
+                        .container-fluid
+                        // begin::Row
+                        .row
+                            div.col-sm-6
+                            h3.mb-0 Dashboard
+                            div.col-sm-6
+                            ol.breadcrumb.float-sm-end
+                                li.breadcrumb-item
+                                a(href="#" ) Home
+                                li.breadcrumb-item.active(aria-current="page" ) Dashboard
+                        // end::Row
+                        // end::Container
+                    // end::App Content Header
+                    main

@@ -1,0 +1,51 @@
+{
+  "labelLogin": "Вход",
+  "labelUsername": "Имя пользователя",
+  "labelPassword": "Пароль",
+  "labelRemember": "Запомнить меня",
+  "sidebarLabel": {
+    "labelPorts": "Порты",
+    "labelSOA": "Заявление о точности",
+    "LabelTPC": "Емкость портов",
+    "labelCustomer": "Клиенты",
+    "labelNew": "Новые",
+    "labelRepair": "Повреждения",
+    "labelRecover": "Восстановление",
+    "labelEqipment": "Оборудование",
+    "labelSW": "Коммутары",
+    "labelADSL": "АДСЛ ",
+    "labelOLT": "ОЛТ",
+    "labelWLL": "РРЛ",
+    "labelSIP": "SIP",
+    "labelTDM": "TDM"
+  },
+  "labelLoginInfo": "Войдите в систему, чтобы начать сеанс",
+  "appName": "ТТС ХМ",
+  "welcomeMessage": "Добро пожаловать на наш сайт!",
+  "greeting": "Здравствуйте, {{name}}!",
+  "labelpageTitles": {
+    "labelHome": "Dashboard",
+    "labelLogin": "Войти",
+    "labelMap": "Карта",
+    "labelReport": "Отчеты",
+    "LabelError": "Ошибка"
+  },
+  "erorMesages": {
+    "401": {
+      "pageTitle": "",
+      "text": ""
+    },
+    "403": {
+      "pageTitle": "",
+      "text": ""
+    },
+    "404": {
+      "pageTitle": "К сожалению, страница не найдена.",
+      "text": "Нам не удалось найти нужную вам страницу."
+    },
+    "500": {
+      "pageTitle": "К сожалению, что-то пошло не так.",
+      "text": "Мы будем работать над этим прямо сейчас."
+    }
+  }
+}

@@ -1,0 +1,31 @@
+extends ../layout/base 
+block content
+    body.login-page.bg-body-secondary
+        .login-box
+            .login-logo
+                a(href='../index2.html')
+                    img.brand-image.opacity-75.shadow(src="https://option-rating.com/wp-content/uploads/2019/03/AO-Transtelecom.png" alt="AdminLTE Logo")
+
+                    //- b AdminLTE
+            .card
+                .card-body.login-card-body
+                    p.login-box-msg Sign in to start your session
+
+                    form(action='/login' method='post')
+                        .input-group.mb-3
+                            input.form-control(type='text' placeholder='Username' name='username')
+                            .input-group-text
+                                span.bi.bi-person
+                        .input-group.mb-3
+                            input.form-control(type='password' placeholder='Password' name='password')
+                            .input-group-text
+                                span.bi.bi-lock-fill
+
+                        .row
+                            .col-8
+                                .form-check
+                                    input.form-check-input(type='checkbox' value='' id='flexCheckDefault')
+                                    label.form-check-label(for='flexCheckDefault') Remember Me
+                            .col-4
+                                .d-grid.gap-2
+                                    button.btn.btn-primary(type='submit') Sign In

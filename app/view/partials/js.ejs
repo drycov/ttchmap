@@ -1,0 +1,53 @@
+</div>
+</div>
+</main>
+</div>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/static/fontawesome/js/all.min.js"></script>
+<script type="text/javascript" src="/static/overlayscrollbars/browser/overlayscrollbars.browser.es6.min.js"></script>
+
+<script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/adminlte/js/adminlte.min.js"></script>
+<script type="text/javascript" src="static/apexcharts/apexcharts.min.js"></script>
+<script type="text/javascript" src="/static/jsvectormap/js/jsvectormap.min.js"></script>
+
+<script type="text/javascript">
+    const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper"; const Default = {
+        scrollbarTheme: "os-theme-dark", scrollbarAutoHide: "leave", scrollbarClickScroll: true,
+    };
+    document.addEventListener("DOMContentLoaded", function () {
+        const
+            sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER); if (sidebarWrapper && typeof
+                OverlayScrollbarsGlobal?.OverlayScrollbars !== "undefined") {
+            OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+                scrollbars: {
+                    theme: Default.scrollbarTheme, autoHide:
+                        Default.scrollbarAutoHide, clickScroll: Default.scrollbarClickScroll,
+                },
+            });
+        }
+    }); 
+</script>
+<script>
+    $(function () {
+        $('.toastsDefaultFull').click(function () {
+            // Find the toast container in the DOM
+            var toastContainer = $('#toast-container');
+
+            // Create the toast div and its contents
+            var toastDiv = $('<div class="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>');
+            var toastHeader = $('<div class="toast-header"><i class="fas fa-envelope fa-lg me-2"></i><strong class="me-auto">Toast Title</strong><small>Subtitle</small><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div>');
+            var toastBody = $('<div class="toast-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>');
+
+            // Append the contents to the toast div
+            toastDiv.append(toastHeader, toastBody);
+
+            // Add the toast div to the toast container
+            toastContainer.append(toastDiv);
+
+            // Show the toast
+            toastDiv.toast('show');
+        });
+    });
+</script>

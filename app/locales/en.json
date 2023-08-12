@@ -1,0 +1,51 @@
+{
+  "labelLogin": "login",
+  "labelUsername": "UserName",
+  "labelPassword": "Password",
+  "labelRemember": "Remember Me",
+  "sidebarLabel": {
+    "labelPorts": "Ports",
+    "labelSOA": "Accuracy statement",
+    "LabelTPC": "Port Capacity",
+    "labelCustomer": "Customers",
+    "labelNew": "New",
+    "labelRepair": "Damage",
+    "labelRecover": "Recover",
+    "labelEqipment": "Equipment",
+    "labelSW": "Switches",
+    "labelADSL": "ADSL",
+    "labelOLT": "OLT",
+    "labelWLL": "RRL",
+    "labelSIP": "SIP",
+    "labelTDM": "TDM"
+  },
+  "labelLoginInfo": "Sign in to start your session",
+  "appName": "TTC HM",
+  "welcomeMessage": "Welcome to our website!",
+  "greeting": "Hello, {{name}}!",
+  "labelpageTitles": {
+    "labelHome": "Dashboard",
+    "labelLogin": "Login",
+    "labelMap": "Map",
+    "labelReport": "Reports",
+    "LabelError": "Error"
+  },
+  "erorMesages": {
+    "401": {
+      "pageTitle": "",
+      "text": ""
+    },
+    "403": {
+      "pageTitle": "",
+      "text": ""
+    },
+    "404": {
+      "pageTitle": "Oops! Page not found.",
+      "text": "We could not find the page you were looking for."
+    },
+    "500": {
+      "pageTitle": "Oops! Something went wrong.",
+      "text": "We will work on fixing that right away."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+nav.app-header.navbar.navbar-expand.bg-body
+    // begin::Container
+    .container-fluid
+        // begin::Start Navbar Links
+        ul.navbar-nav
+            li.nav-item
+                a.nav-link(data-lte-toggle="sidebar" href="#" role="button")
+                    i.bi.bi-list
+        // end::Start Navbar Links
+
+        // begin::End Navbar Links
+        ul.navbar-nav.ms-auto
+
+            // begin::User Menu Dropdown
+            li.nav-item.dropdown.user-menu
+                a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" )
+                    img(src="https://i.pravatar.cc/300" class="user-image rounded-circle shadow" alt="User Image")
+                    span.d-none.d-md-inline Alexander Pierce
+                ul.dropdown-menu.dropdown-menu-lg.dropdown-menu-end
+                    // begin::User Image
+                    li.user-header.text-bg-primary
+                        img(src="https://i.pravatar.cc/300" class="rounded-circle shadow" alt="User Image")
+                        p
+                            | Alexander Pierce - Web Developer
+                            small Member since Nov. 2023
+                    // end::User Image
+                    // begin::Menu Body
+                    li.user-body
+                        // begin::Row
+                        div.row
+                            div.col-4.text-center
+                                a(href="#" ) Followers
+                            div.col-4.text-center
+                                a(href="#" ) Sales
+                            div.col-4.text-center
+                                a(href="#" ) Friends
+                        li.user-footer
+                            a(href="#" class="btn btn-default btn-flat" ) Profile
+                            a(href="#" class="btn btn-default btn-flat float-end" ) Sign out
+nav

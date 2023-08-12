@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="description" content="TTC BOT Admin panel">
+<meta name="theme-color" content="#712cf9">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<title>
+    <%= typeof title !== 'undefined' ? title : 'default' %>
+</title>
+
+<% const cssFiles = [
+    '/static/bootstrap/css/bootstrap.min.css',
+    '/static/bootstarpicons/bootstrap-icons.min.css',
+    '/static/fontawesome/css/all.min.css',
+    '/static/adminlte/css/adminlte.min.css',
+    '/static/apexcharts/apexcharts.css',
+    '/static/jsvectormap/css/jsvectormap.min.css',
+    '/static/overlayscrollbars/styles/overlayscrollbars.min.css',
+]; %>
+
+<% cssFiles.forEach(cssFile => { %>
+    <link rel="stylesheet" type="text/css" href="<%= cssFile %>">
+<% }); %>

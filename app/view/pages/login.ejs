@@ -1,0 +1,38 @@
+<body class="login-page dark-mode" style="min-height: 466px;">
+  <div class="login-box">
+    <div class="card card-outline card-primary">
+      <div class="card-header text-center">
+        <a href="/" class="h1"><b><%= t('appName') %></b></a>
+      </div>
+      <div class="card-body">
+        <!-- <p class="login-box-msg text-info"><%= t('labelLoginInfo') %></p> -->
+        <form action="/login" method="post">
+          <div class="input-group mb-3">
+            <input class="form-control" type="text" placeholder=<%= t('labelUsername') %> name="username">
+            <div class="input-group-text">
+              <span class="bi bi-person"></span>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input class="form-control" type="password" placeholder=<%= t('labelPassword') %> name="password">
+            <div class="input-group-text">
+              <span class="bi bi-lock-fill"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault"><%= t('labelRemember') %></label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit"><%= t('labelLogin') %></button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
